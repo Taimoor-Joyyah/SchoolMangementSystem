@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="770.0" prefWidth="1314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagementsystem.ParentDashboardController">
+   <children>
+      <Label layoutX="46.0" layoutY="29.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="64.0" text="Welcome again!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="528.0" text="Notifications">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="notifications" alignment="TOP_LEFT" layoutX="58.0" layoutY="572.0" prefHeight="122.0" prefWidth="624.0" text="The notification by admin" />
+      <TableView fx:id="children_table" layoutX="143.0" layoutY="186.0" prefHeight="272.0" prefWidth="998.0">
+        <columns>
+          <TableColumn prefWidth="173.6000213623047" text="Student roll number" />
+          <TableColumn prefWidth="226.39996337890625" text="Student name" />
+            <TableColumn prefWidth="200.0" text="Student class" />
+            <TableColumn prefWidth="200.0" text="Remarks" />
+            <TableColumn prefWidth="177.59991455078125" text="Fee status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

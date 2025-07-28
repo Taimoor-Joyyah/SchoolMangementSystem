@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagementsystem.LoginController">
+   <children>
+      <AnchorPane id="root" prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #472930;" stylesheets="@img/style.css">
+         <children>
+            <Label layoutX="83.0" layoutY="139.0" text="Username" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="120.0" />
+               </padding>
+            </Label>
+            <Label layoutX="87.0" layoutY="188.0" text="Password" textFill="WHITE" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="120.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="username" layoutX="286.0" layoutY="138.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Username/Email" AnchorPane.leftAnchor="250.0" />
+            <PasswordField fx:id="password" layoutX="287.0" layoutY="187.0" prefWidth="200.0" promptText="Enter Password" AnchorPane.leftAnchor="250.0" />
+            <Button fx:id="login" layoutX="250.0" layoutY="288.0" mnemonicParsing="false" prefWidth="100.0" text="Login" />
+            <ImageView fitHeight="76.0" fitWidth="100.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-user-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="770.0" prefWidth="1314.0"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.schoolmanagementsystem.StudentDashboardController">
+    <children>
+        <PieChart fx:id="attendance" layoutX="26.0" layoutY="128.0" title="Attendance"/>
+        <Label layoutX="46.0" layoutY="29.0" text="Dashboard">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="64.0" text="Welcome again!">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="950.0" layoutY="128.0" text="Timetable">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <GridPane fx:id="timetable" gridLinesVisible="true" layoutX="589.0" layoutY="165.0" prefHeight="350.0"
+                  prefWidth="700.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="593.4000244140625" minWidth="100.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="164.60001220703126" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="336.6000274658203" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 1">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="10:00 - 11:00">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="11:00 - 12:00">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="12:00 - 01:00">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="01:00 - 02:00">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="5">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="02:00 - 03:00">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 2">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 3">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 4">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="5">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 5">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane prefHeight="100.0" prefWidth="100.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="120.0" text="Time">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="6">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                                       text="Class 6">
+                                    <font>
+                                        <Font name="System Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="7">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                                       text="Class 7">
+                                    <font>
+                                        <Font name="System Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="8">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 8">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="9">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 9">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="1012.0" layoutY="10.0" GridPane.columnIndex="10">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 10">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x00">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x01">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x02">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x03">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x04">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="x10">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x11">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="x12">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="4" fx:id="x13">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="5" fx:id="x14">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="x20">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="x21">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="x22">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="x23">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="5" fx:id="x24">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="x30">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="2" fx:id="x31">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="x32">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="4" fx:id="x33">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="5" fx:id="x34">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="1" fx:id="x40">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="2" fx:id="x41">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x42">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="4" fx:id="x43">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="5" fx:id="x44">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="1" fx:id="x50">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="2" fx:id="x51">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="3" fx:id="x52">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="4" fx:id="x53">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="5" fx:id="x54">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="1" fx:id="x60">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="2" fx:id="x61">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="3" fx:id="x62">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="4" fx:id="x63">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="5" fx:id="x64">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="x70">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="2" fx:id="x71">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="3" fx:id="x72">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="4" fx:id="x73">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="5" fx:id="x74">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="1" fx:id="x80">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="2" fx:id="x81">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="3" fx:id="x82">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="4" fx:id="x83">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="5" fx:id="x84">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="1" fx:id="x90">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="2" fx:id="x91">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="3" fx:id="x92">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="4" fx:id="x93">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="5" fx:id="x94">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+            </children>
+        </GridPane>
+        <Label layoutX="27.0" layoutY="592.0" text="Notifications">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="notifications" alignment="TOP_LEFT" layoutX="57.0" layoutY="627.0" prefHeight="122.0"
+               prefWidth="624.0" text="The notification by admin"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="786.0" prefWidth="1314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagementsystem.AdminFeeVouchers">
+   <children>
+      <ImageView fitHeight="67.0" fitWidth="80.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/icons8-fee-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="96.0" layoutY="18.0" text="Fee scheduling">
+         <font>
+            <Font name="Segoe UI Bold" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="fee_table" layoutX="107.0" layoutY="150.0" prefHeight="511.0" prefWidth="1081.0">
+        <columns>
+          <TableColumn prefWidth="99.1999282836914" text="Class" />
+          <TableColumn prefWidth="116.00003051757812" text="Student Id" />
+            <TableColumn prefWidth="287.1999816894531" text="Student name" />
+            <TableColumn minWidth="0.0" prefWidth="91.199951171875" text="Fees" />
+            <TableColumn prefWidth="181.5999755859375" text="Due date" />
+            <TableColumn prefWidth="153.60009765625" text="Late Charges" />
+            <TableColumn prefWidth="153.60009765625" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

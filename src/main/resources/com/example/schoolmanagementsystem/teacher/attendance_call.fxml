@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1332.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagementsystem.TeacherAttendanceCallController">
+   <children>
+      <Label layoutX="105.0" layoutY="42.0" text="Attendacne of the Class">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="selectDate" layoutX="149.0" layoutY="113.0" promptText="Select Date" />
+      <Label layoutX="43.0" layoutY="116.0" text="Select date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="93.0" text="Select Class:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="43.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/icons8-attendance-80.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="attendanceTable" layoutX="218.0" layoutY="183.0" prefHeight="481.0" prefWidth="602.0">
+         <columns>
+            <TableColumn prefWidth="109.5999755859375" text="Student Id" />
+            <TableColumn prefWidth="225.5999755859375" text="Student name" />
+            <TableColumn prefWidth="120.0" text="Percentage" />
+            <TableColumn prefWidth="146.40008544921875" text="Present" />
+         </columns>
+      </TableView>
+      <ChoiceBox fx:id="selectClass" layoutX="626.0" layoutY="90.0" prefWidth="150.0" />
+      <Button fx:id="submit" layoutX="1167.0" layoutY="707.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #047940;" text="Submit" textFill="WHITE" />
+      <Label layoutX="491.0" layoutY="138.0" text="Select Subject:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectSubject" layoutX="626.0" layoutY="135.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

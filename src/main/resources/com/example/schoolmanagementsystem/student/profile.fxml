@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="786.0" prefWidth="1314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagementsystem.StudentProfileController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Student Info" textAlignment="CENTER" wrapText="false">
+         <font>
+            <Font name="System Bold" size="22.0" fx:id="x1" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="206.0" prefWidth="150.0" style="&#10;" text="Full Name" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x12" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="694.0" layoutY="206.0" prefWidth="150.0" style="&#10;" text="Father Name" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x121" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="694.0" layoutY="272.0" prefWidth="150.0" style="&#10;" text="Date of birth" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x1212" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="344.0" prefWidth="150.0" style="&#10;" text="Gender" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x12121" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="694.0" layoutY="344.0" prefWidth="150.0" style="&#10;" text="Address" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x12122" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="417.0" prefWidth="150.0" style="&#10;" text="Email" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x121221" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="271.0" prefWidth="150.0" style="&#10;" text="Class/Grade" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x1212211" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="130.0" prefWidth="150.0" style="&#10;" text="Registration id" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" fx:id="x122" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="228.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="registration_no" alignment="CENTER" layoutX="228.0" layoutY="135.0" prefWidth="200.0" style="&#10;" text="Registration id" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="228.0" layoutY="212.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="full_name" alignment="CENTER" layoutX="228.0" layoutY="212.0" prefWidth="200.0" style="&#10;" text="Full name" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="228.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="gender" alignment="CENTER" layoutX="228.0" layoutY="348.0" prefWidth="200.0" style="&#10;" text="Gender" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="228.0" layoutY="421.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="email" alignment="CENTER" layoutX="228.0" layoutY="421.0" prefWidth="200.0" style="&#10;" text="Email" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="932.0" layoutY="211.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="father_name" alignment="CENTER" layoutX="932.0" layoutY="211.0" prefWidth="200.0" style="&#10;" text="Father name" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="932.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="dob" alignment="CENTER" layoutX="932.0" layoutY="276.0" prefWidth="200.0" style="&#10;" text="DOB" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="932.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="address" alignment="CENTER" layoutX="932.0" layoutY="347.0" prefWidth="200.0" style="&#10;" text="Address" textAlignment="CENTER" wrapText="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="228.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="grade" alignment="CENTER" layoutX="228.0" layoutY="275.0" prefWidth="200.0" style="&#10;" text="Grade" textAlignment="CENTER" wrapText="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="786.0" prefWidth="1314.0"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.schoolmanagementsystem.AdminTimeTableController">
+    <children>
+        <Button fx:id="save" layoutX="1066.0" layoutY="716.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="150.0" style="-fx-background-color: #047940;" text="Save" textFill="#fcfbfb"/>
+        <ImageView fitHeight="67.0" fitWidth="80.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../icon/icons8-timetable-50.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="96.0" layoutY="18.0" text="Timetable Schedule for teachers">
+            <font>
+                <Font name="Segoe UI Bold" size="48.0"/>
+            </font>
+        </Label>
+        <GridPane fx:id="timetable" gridLinesVisible="true" layoutX="29.0" layoutY="141.0" prefHeight="506.0"
+                  prefWidth="1217.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="593.4000244140625" minWidth="100.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1094.9999389648438" minWidth="10.0" prefWidth="110.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="164.60001220703126" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="336.6000274658203" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="421.6000732421875" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 1">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="10:00 - 11:00">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="11:00 - 12:00">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="12:00 - 01:00">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="01:00 - 02:00">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="5">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="02:00 - 03:00">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 2">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="3">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 3">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 4">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="5">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 5">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane prefHeight="100.0" prefWidth="100.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="120.0" text="Time">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="6">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                                       text="Class 6">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="7">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                                       text="Class 7">
+                                    <font>
+                                        <Font name="System Bold" size="16.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="8">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 8">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.columnIndex="9">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 9">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="1012.0" layoutY="10.0" GridPane.columnIndex="10">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="120.0"
+                               text="Class 10">
+                            <font>
+                                <Font name="System Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                           fx:id="x00"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                           fx:id="x01"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                           fx:id="x02"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="4"
+                           fx:id="x03"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="5"
+                           fx:id="x04"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="1"
+                           fx:id="x10"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="2"
+                           fx:id="x11"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="3"
+                           fx:id="x12"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="4"
+                           fx:id="x13"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="5"
+                           fx:id="x14"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="1"
+                           fx:id="x20"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="2"
+                           fx:id="x21"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="3"
+                           fx:id="x22"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="4"
+                           fx:id="x23"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="3" GridPane.rowIndex="5"
+                           fx:id="x24"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="1"
+                           fx:id="x30"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="2"
+                           fx:id="x31"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="3"
+                           fx:id="x32"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="4"
+                           fx:id="x33"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="5"
+                           fx:id="x34"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="1"
+                           fx:id="x40"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="2"
+                           fx:id="x41"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="3"
+                           fx:id="x42"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="4"
+                           fx:id="x43"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="5" GridPane.rowIndex="5"
+                           fx:id="x44"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="1"
+                           fx:id="x50"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="2"
+                           fx:id="x51"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="3"
+                           fx:id="x52"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="4"
+                           fx:id="x53"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="6" GridPane.rowIndex="5"
+                           fx:id="x54"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="1"
+                           fx:id="x60"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="2"
+                           fx:id="x61"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="3"
+                           fx:id="x62"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="4"
+                           fx:id="x63"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="7" GridPane.rowIndex="5"
+                           fx:id="x64"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="1"
+                           fx:id="x70"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="2"
+                           fx:id="x71"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="3"
+                           fx:id="x72"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="4"
+                           fx:id="x73"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="8" GridPane.rowIndex="5"
+                           fx:id="x74"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="1"
+                           fx:id="x80"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="2"
+                           fx:id="x81"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="3"
+                           fx:id="x82"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="4"
+                           fx:id="x83"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="9" GridPane.rowIndex="5"
+                           fx:id="x84"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="1"
+                           fx:id="x90"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="2"
+                           fx:id="x91"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="3"
+                           fx:id="x92"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="4"
+                           fx:id="x93"/>
+                <TextField prefHeight="100.0" prefWidth="120.0" GridPane.columnIndex="10" GridPane.rowIndex="5"
+                           fx:id="x94"/>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
